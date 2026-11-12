@@ -1,0 +1,39 @@
+# Python environment and cache
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Portable release folders (may contain unpublished lab results)
+/release/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Research originals and potentially unpublished lab data
+/data/raw_images/**
+/data/reference_imagej/**
+/data/metadata/**
+/data/lab_validated/**
+!/data/raw_images/.gitkeep
+!/data/reference_imagej/.gitkeep
+!/data/metadata/.gitkeep
+
+# Generated outputs
+/results/**
+!/results/.gitkeep
+/build/
+/dist/
+*.spec
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/*.log
